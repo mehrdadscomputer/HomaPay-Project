@@ -39,7 +39,7 @@ public class Main {
 			ui.showOptions(products);
 			int n = ui.getUserInput();
 			if (n == 0) break;
-			amount = ui.askForAmount();
+			amount = ui.askForAmount(products.get(n-1).getName());
 			Product cartItem = products.get(n-1);
 			cartItem.setAmount(amount);
 			cartItems.add(cartItem);

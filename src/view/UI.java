@@ -27,8 +27,8 @@ public class UI implements TaxOrDiscount {
 		System.out.println("0. Finish");
 	}
 
-	public int askForAmount() {
-		System.out.println("How many do you want?");
+	public int askForAmount(String name) {
+		System.out.println("How many "+name+" do you want?");
 		return (getUserInput());
 	}
 

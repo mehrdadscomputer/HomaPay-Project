@@ -19,7 +19,7 @@ public class DatabaseConnection {
 
 	// JDBC driver name and database URL
 	static final String JDBC_DRIVER = "org.h2.Driver";
-	static final String DB_URL = "jdbc:h2:~/test8";
+	static final String DB_URL = "jdbc:h2:~/homaPayDatabase";
 
 	// Database credentials
 	static final String USER = "mehrdad";
