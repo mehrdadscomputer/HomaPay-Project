@@ -44,6 +44,10 @@ public class Main {
 			cartItem.setAmount(amount);
 			cartItems.add(cartItem);
 			cart.addProductToCart(cartItem);
+			products.remove(products.get(n-1));
+			for (int i = n-1; i < products.size(); i++){
+				products.get(i).setId(products.get(i).getId()-1);
+			}
 		}
 		
 	}
