@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 import database.DatabaseConnection;
 
-public class Cart implements TaxOrDiscount{
+public class Cart{
 	List<Product> purchases = new ArrayList<>();
 	DatabaseConnection databaseConnection;
 
@@ -15,11 +15,5 @@ public class Cart implements TaxOrDiscount{
 		databaseConnection.insetDataIntoCartTable(cartItem.getName(), cartItem.getPrice(), cartItem.getAmount());
 	}
 
-	@Override
-	public double calulateTaxOrDiscount(int value) {
-		// TODO Auto-generated method stub
-		double discount = 0.9;
-		return value * discount;
-	}
 
 }

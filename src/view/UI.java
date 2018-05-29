@@ -4,8 +4,9 @@ import java.util.List;
 import java.util.Scanner;
 
 import datamodel.Product;
+import datamodel.TaxOrDiscount;
 
-public class UI {
+public class UI implements TaxOrDiscount {
 
 	// this class interacts with the user and shows him options and gets his
 	// inputs
@@ -41,7 +42,7 @@ public class UI {
 	}
 	
 	public void showCartSummary(List<Product> products){
-		int sum = 0;
+		double sum = 0;
 		System.out.println("Summary of the purchase is:");
 		System.out.println("-------------------------------------------");
 		System.out.println("Name"+"     "+"In"+"      "+"Amount"+"     "+"Cost");
@@ -54,6 +55,14 @@ public class UI {
 			System.out.println(name+"     "+price+"$     "+amount+"     "+(price*amount));
 			sum = sum + price*amount;
 		}
+		sum = calulateTaxOrDiscount(sum);
 		System.out.println("The total cost is: "+sum);
+	}
+
+	@Override
+	public double calulateTaxOrDiscount(double value) {
+		// TODO Auto-generated method stub
+		double discount = 0.9;
+		return value * discount;
 	}
 }
