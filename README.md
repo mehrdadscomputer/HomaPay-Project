@@ -25,27 +25,38 @@ Oterwise, follow the instruction here to install them.
 
 ## Running the tests
 
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
+First the program shows the options which the customer can choose from.
+```
+Welcome to our shop. Please choose the product that you want to buy:
+1. Monitor	350$
+2. Television	800$
+3. Keyboard	100$
+4. Mouse	50$
+5. Laptop	1000$
+```
+He only needs to enter number of the product that he wants.
+```
+1
+```
+then another question will pop up and will ask the customer to enter the amount of that product.
+```
+How many Monitor do you want?
+```
+the user should input the amount:
+```
+2
+```
+after this, the product that was chosen will be eliminated from products list and menu containing the other products will show up again and will ask for user input.
+Finally, when a user choose option 0 which is "finish", the summary of user purchases beside tha total cost will be shown. It is worth mentioning that discount or tax will decrease or increase the final cost that the user needs to pay. 
 
 ```
-Give an example
+Summary of the purchase is:
+-------------------------------------------
+Name     In      Amount     Cost
+Monitor     350$     2     700
+Keyboard     100$     3     300
+The total cost is: 900.0
 ```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
 
 ## Built With
 
