@@ -49,6 +49,6 @@ public class Main {
 				products.get(i).setId(products.get(i).getId()-1);
 			}
 		}
-		
+		ui.showCartSummary(cartItems);
 	}
 }

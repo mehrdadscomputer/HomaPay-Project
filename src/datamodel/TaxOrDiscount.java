@@ -1,5 +1,5 @@
 package datamodel;
 
 public interface TaxOrDiscount {
-	public int calulateTaxOrDiscount();
+	public double calulateTaxOrDiscount(int value);
 }

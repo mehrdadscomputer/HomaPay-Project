@@ -39,4 +39,21 @@ public class UI {
 
 		return userInput;
 	}
+	
+	public void showCartSummary(List<Product> products){
+		int sum = 0;
+		System.out.println("Summary of the purchase is:");
+		System.out.println("-------------------------------------------");
+		System.out.println("Name"+"     "+"In"+"      "+"Amount"+"     "+"Cost");
+		
+		for (int i = 0; i < products.size(); i++) {
+			String name = products.get(i).getName();
+			int price = products.get(i).getPrice();
+			int amount = products.get(i).getAmount();
+			
+			System.out.println(name+"     "+price+"$     "+amount+"     "+(price*amount));
+			sum = sum + price*amount;
+		}
+		System.out.println("The total cost is: "+sum);
+	}
 }
