@@ -46,6 +46,7 @@ public class UI implements TaxOrDiscount {
 		System.out.println("Summary of the purchase is:");
 		System.out.println("-------------------------------------------");
 		System.out.println("Name"+"     "+"In"+"      "+"Amount"+"     "+"Cost");
+		System.out.println("-------------------------------------------");
 		
 		for (int i = 0; i < products.size(); i++) {
 			String name = products.get(i).getName();
@@ -56,6 +57,7 @@ public class UI implements TaxOrDiscount {
 			sum = sum + price*amount;
 		}
 		sum = calulateTaxOrDiscount(sum);
+		System.out.println("-------------------------------------------");
 		System.out.println("The total cost is: "+sum);
 	}
 
