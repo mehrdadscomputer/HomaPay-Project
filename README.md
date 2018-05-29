@@ -13,6 +13,7 @@ You can find a good description of it here:
 https://en.wikipedia.org/wiki/In-memory_database
 for further toturials and installation manual, visit here:
 https://www.tutorialspoint.com/h2_database/index.htm
+
 Also you need Java JDK to be installed on your machine.
 use these commands to verify java and javac instalation:
 ```
@@ -48,23 +49,14 @@ Add additional notes about how to deploy this on a live system
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [eclipse](https://www.eclipse.org/) - IDE used
+* [H2](http://www.h2database.com/html/main.html) - Database
 
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Mehrdadscomputer** - *Initial work*
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
 ## License
 
@@ -72,6 +64,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* to the interviewer
